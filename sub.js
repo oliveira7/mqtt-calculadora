@@ -31,7 +31,6 @@ cliente.on('message', (topicoConta, message) => {
     }
 
     console.log('Resultado a ser passado: ', resultado);
-
     cliente.publish(topicoResultado, resultado.toString());
 });
 

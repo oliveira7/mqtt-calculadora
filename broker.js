@@ -3,7 +3,7 @@ const mosca = require('mosca');
 let porta = { port: 1883 };
 let broker = new mosca.Server(porta);
 
-broker.on('clientConnected', function(client) {
+broker.on('clientConnected', (client) => {
     console.log('Cliente conectado: ', client.id);
 });
 
